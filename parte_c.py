@@ -9,7 +9,7 @@ vitorias_o = 0
 empates = 0
 
 # Recebe o resultado da partida
-resultado = input("Digite o resultado (X, O ou E para empate): ").upper()
+resultado = input("Digite o resultado (X, O ou E para empate): ").strip().upper()
 
 # Verifica quem venceu ou se houve empate
 if resultado == "X":
