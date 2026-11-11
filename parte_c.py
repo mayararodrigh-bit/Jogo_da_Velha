@@ -11,6 +11,10 @@ empates = 0
 # Recebe o resultado da partida
 resultado = input("Digite o resultado (X, O ou E para empate): ").strip().upper()
 
+while resultado not in ("X", "O", "E"):
+    print("Resultado inválido! Tente novamente.")
+    resultado = input("Digite o resultado (X, O ou E para empate): ").strip().upper()
+
 # Verifica quem venceu ou se houve empate
 if resultado == "X":
     vitorias_x = vitorias_x + 1
@@ -18,8 +22,6 @@ elif resultado == "O":
     vitorias_o = vitorias_o + 1
 elif resultado == "E":
     empates = empates + 1
-else:
-    print("Resultado inválido!")
 
 # Mostra o placar atualizado
 print("\n======= PLACAR =======")
