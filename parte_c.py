@@ -18,10 +18,15 @@ while resultado not in ("X", "O", "E"):
 # Verifica quem venceu ou se houve empate
 if resultado == "X":
     vitorias_x = vitorias_x + 1
+    mensagem = "Vitória do X registrada!"
 elif resultado == "O":
     vitorias_o = vitorias_o + 1
+    mensagem = "Vitória do O registrada!"
 elif resultado == "E":
     empates = empates + 1
+    mensagem = "Empate registrado!"
+
+print(mensagem)
 
 # Mostra o placar atualizado
 print("\n======= PLACAR =======")
